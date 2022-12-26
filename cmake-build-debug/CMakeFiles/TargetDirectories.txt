@@ -1,0 +1,3 @@
+C:/Users/Ahmed Waleed/Desktop/A Sol/Version2/cmake-build-debug/CMakeFiles/Version2.dir
+C:/Users/Ahmed Waleed/Desktop/A Sol/Version2/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/Ahmed Waleed/Desktop/A Sol/Version2/cmake-build-debug/CMakeFiles/rebuild_cache.dir
