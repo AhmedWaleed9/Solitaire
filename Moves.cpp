@@ -4,7 +4,15 @@
 
 #include "Moves.h"
 
-Moves::Moves() = default;
+Moves::Moves() {
+    ctr = 0;
+    limit = INT_MAX;
+}
+
+void Moves::setLimit(int l) {
+    limit = l;
+}
+
 
 /*
 For string s
@@ -21,8 +29,11 @@ void Moves::addMove(string s) {
     moves.push(s);
 }
 
+// You'll make an if condition and make an action according to the returned value
 string Moves::undoMove() {
+    if (ctr == limit) return "error";
     string copy = moves.top();
     moves.pop();
+    ctr++;
     return copy;
 }
