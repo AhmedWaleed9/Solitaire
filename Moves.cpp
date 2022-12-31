@@ -15,24 +15,25 @@ void Moves::setLimit(int l) {
 
 
 /*
-For string s
- s.size() == 4
+string
+ s.size() == 2
  s[0]: The last position
  s[1]: The current position
  Positions: 1, 2, 3, 4, 5, 6, 7 for the 7 columns
             d for deck, r for draw
             S, H, C, D for the four foundation piles "Spades", "Hearts", "Clubs", "Diamonds"
- s[2]+s[3]: The card
+
+ Pointer for the card
 */
 
-void Moves::addMove(string s) {
-    moves.push(s);
+void Moves::addMove(pair<string, Card *> p) {
+    moves.push(p);
 }
 
 // You'll make an if condition and make an action according to the returned value
-string Moves::undoMove() {
-    if (ctr == limit) return "error";
-    string copy = moves.top();
+pair<string, Card *> Moves::undoMove() {
+    if (ctr == limit) return make_pair("", nullptr);
+    pair copy = moves.top();
     moves.pop();
     ctr++;
     return copy;
