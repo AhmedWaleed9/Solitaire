@@ -2,6 +2,7 @@
 // Created by Ahmed Waleed on 12/30/2022.
 //
 #include <bits/stdc++.h>
+#include "Card.h"
 
 using namespace std;
 
@@ -12,7 +13,7 @@ using namespace std;
 class Moves {
     int ctr;
     int limit;
-    stack<string> moves;
+    stack<pair<string, Card *>> moves;
 public:
     Moves();
 
@@ -20,9 +21,9 @@ public:
     void setLimit(int l);
 
     // Methods
-    void addMove(string s);
+    void addMove(pair<string, Card *> p);
 
-    string undoMove();
+    pair<string, Card *> undoMove();
 };
 
 
