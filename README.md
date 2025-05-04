@@ -2,6 +2,12 @@
 
 This project is a modern implementation of the classic Solitaire game, developed as part of a Data Structures course. The focus is on designing and implementing fundamental data structures from scratch, alongside creating a functional and visually appealing graphical user interface (GUI) using C++ and SFML (Simple and Fast Multimedia Library).
 
+## Trailer
+
+
+https://github.com/user-attachments/assets/aeb4549c-7382-453e-9c2b-2bbc47a18620
+
+
 ## Features
 
 - **Interactive Gameplay**: Adheres to traditional Solitaire rules, offering an engaging user experience.
